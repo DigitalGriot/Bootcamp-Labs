@@ -5,7 +5,7 @@ import java.util.Scanner;
 import static org.example.Main.checkInBook;
 
 public class Screens {
-    private static Book[] books; // Declare book array at the class level
+    public static Book[] books; // Declare book array at the class level
 
     public static void main(String[] args) {
         // Call the method to set up the book inventory

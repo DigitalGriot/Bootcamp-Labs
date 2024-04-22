@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static List<Book> library = new ArrayList<>();
-    private static Scanner scanner = new Scanner(System.in);
+    public static List<Book> library = new ArrayList<>();
+    public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         populateLibrary();
         displayHomeScreen();
     }
 
-    private static void populateLibrary() {
+    public static void populateLibrary() {
         // Populate the library with 20 books
         library.add(new Book(1, "1-11", "Shadow Protocol", false, ""));
         library.add(new Book(2, "2-22", "Cipher Conspiracy", false, ""));
@@ -38,7 +38,7 @@ public class Main {
         library.add(new Book(20, "20-20", "Shadowstrike Directive", true, "Amanda"));
     }
 
-    private static void displayHomeScreen() {
+    public static void displayHomeScreen() {
         System.out.println("Welcome to Jabari's Digital Lending Library!");
         System.out.println("1. Show available books");
         System.out.println("2. Check out a book");
@@ -66,7 +66,7 @@ public class Main {
         }
     }
 
-    private static void showAvailableBooks() {
+    public static void  showAvailableBooks() {
         System.out.println("Available Books:");
         for (Book book : library) {
             if (!book.isCheckedOut()) {
@@ -77,7 +77,7 @@ public class Main {
         displayHomeScreen();
     }
 
-    private static void checkOutBook() {
+    public static void checkOutBook() {
         System.out.println("Which book would you like to borrow?:");
         scanner.nextLine(); // Consume newline character
         String title = scanner.nextLine();
