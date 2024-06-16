@@ -62,4 +62,4 @@ CREATE TABLE salesContracts (
 );
 INSERT INTO salesContracts (VIN, contractDate, customerName, customerEmail, amount) VALUES
 ('10112', '2021-09-28', 'Dana Wyatt', 'dana@texas.com', 1439.75),
-('10113', '2024-05-19', 'David virgen', 'Davidmtw3@gmail.com', 1439.75);
+('10113', '2024-05-19', 'Jabari Henville', 'Jhenville1@yahoo.com', 1439.75);
